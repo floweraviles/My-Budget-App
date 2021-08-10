@@ -6,7 +6,7 @@ const Transactions = ({transactions}) => {
     // const { index } = useParams()
 
     return (
-        <div className="container mb-5 mt-3">
+        <div className="container mb-5 mt-3 d-flex justify-content-center">
           <table className= "table table-hover table-bordered">
                 <thead>
                     <tr>
@@ -17,11 +17,9 @@ const Transactions = ({transactions}) => {
                     </tr>
                 </thead>
                 <tbody>
-                        {transactions.map((transaction, index) =>{
-                        return <Transaction key={index} transaction={transaction} index={index} />
-
-                    })}
-                    
+                     
+                    {transactions.map((transaction, index) =>{
+                        return <Transaction key={index} transaction={transaction} index={index} /> })}
                 </tbody> 
             </table>
          </div>

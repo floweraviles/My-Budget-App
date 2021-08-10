@@ -4,9 +4,10 @@ import "./NavBar.css"
 const NavBar = () => {
 
     return (
-        <nav className="navbar">
-            <NavLink to="/transactions">Transactions</NavLink>
-            <NavLink to="/transactions/new">New Transaction</NavLink>
+        <nav className="navbar  navbar-expand-lg navbar-light bg-dark">
+            <NavLink to="/" className="nav-item nav-link">🏦</NavLink>
+            <NavLink to="/transactions" className="nav-item nav-link ">Transactions</NavLink>
+            <NavLink to="/transactions/new" className="nav-item nav-link ">New Transaction</NavLink>
         </nav>
     );
 };

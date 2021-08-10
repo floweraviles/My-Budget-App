@@ -29,19 +29,21 @@ const TransactionDetails = (props) => {
     };
 
     return (
-        <div>
-            <h1> Transaction </h1>
-            <p>{transaction.date}</p>
-            <p>{transaction.name}</p>
-            <p>{transaction.amount}</p>
-            <p>{transaction.from} </p>
+        <div className="d-flex flex-md-column align-items-md-center">
+            <h2 className="d-flex align-items-center justify-content-center">Name: {transaction.name}</h2>
+            <h4 className="d-flex align-items-center justify-content-center">Date: {transaction.date}</h4>
+            <h4 className="d-flex align-items-center justify-content-center">Amount: ${transaction.amount}</h4>
+            <h4 className="d-flex align-items-center justify-content-center">From: {transaction.from} </h4>
+            <div className="d-flex align-items-center justify-content-center">
             <Link to={`/transactions`}>
-                <button className="ms-2 btn btn-outline-light">Back</button>
+                <button type="button" className="btn btn-primary text-dark" >Back</button>
             </Link>
             <Link to={`/transactions/${index}/edit`}>
-                <button className="ms-2 btn btn-warning btn-outline-light text-dark">Edit</button>
+                <button type="button" className="btn btn-warning text-dark">Edit</button>
             </Link>
-            <button onClick={handleDelete} className="ms-2 btn btn-danger btn-outline-light text-dark">Delete</button>
+            <button type="button" onClick={handleDelete} className="btn btn-danger text-dark">Delete</button>
+
+            </div>
         </div>
     );
 

@@ -10,7 +10,7 @@ const Index = ({transactions}) =>{
 
     return (
         <div>
-            <h1>Account Balance: ${Number(sum)}</h1>
+            <h2 className="d-flex justify-content-center">Account Balance: ${Number(sum)}</h2>
             <br />
             <Transactions transactions={transactions} />
         </div>

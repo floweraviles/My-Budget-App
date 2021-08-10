@@ -7,6 +7,7 @@ import NewTransaction from './Components/NewTransaction';
 import Edit from './Pages/Edit';
 import TransactionDetails from './Components/TransactionDetails';
 import Index from './Pages/Index';
+import Home from './Pages/Home';
 
 // import Transactions from './Components/Transactions'; 
 
@@ -64,6 +65,9 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
+        <Route exact path="/">
+            <Home />
+        </Route>
           <Route exact path={"/transactions"}>
             <Index transactions={transactions} />
           </Route>

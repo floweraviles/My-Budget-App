@@ -1,6 +1,6 @@
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: aquamarine;
 }
 
@@ -8,3 +8,13 @@ nav{
     margin: 20px; 
     text-decoration: none; 
 }
+
+.navbar-brand>img {
+    padding: 7px 14px;
+    width: 14px;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
