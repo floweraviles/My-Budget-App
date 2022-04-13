@@ -43,7 +43,7 @@ const NewTransaction = ({ addTransaction }) => {
           <br />
           <div className="form-group col-md-6">
             <label htmlFor="name">Name: </label>
-            <input
+            <input required
               className ="form-control"
               type="text"
               id="name"
@@ -54,7 +54,7 @@ const NewTransaction = ({ addTransaction }) => {
           <br />
           <div className="form-group col-md-6">
             <label htmlFor="amount">Amount: </label>
-            <input
+            <input required
               className = "form-control"
               type="number"
               id="amount"
